@@ -296,6 +296,57 @@ Submitted by: Manjushri Dhole</rdfs:comment>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasActor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasActor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasActress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasActress">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasDirector -->
+
+    <owl:DatatypeProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasMovie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasMovie">
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasProducer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -539,12 +590,6 @@ Submitted by: Manjushri Dhole</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActress"/>
                 <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AishwaryaRai"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasAwards"/>
-                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1547,6 +1592,8 @@ Submitted by: Manjushri Dhole</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AcademyAward">
         <rdf:type rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
+        <hasMovie>Dhoom</hasMovie>
+        <hasMovie>KungFu</hasMovie>
     </owl:NamedIndividual>
     
 
@@ -1555,6 +1602,7 @@ Submitted by: Manjushri Dhole</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#FilmfareAwards">
         <rdf:type rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
+        <hasMovie>Kahani</hasMovie>
     </owl:NamedIndividual>
     
 
@@ -1563,6 +1611,7 @@ Submitted by: Manjushri Dhole</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#NationalAwards">
         <rdf:type rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
+        <hasMovie>Khamoshi</hasMovie>
     </owl:NamedIndividual>
     
 
